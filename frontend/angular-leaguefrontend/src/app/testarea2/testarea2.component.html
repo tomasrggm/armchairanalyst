@@ -1,0 +1,10 @@
+<p *ngIf = "playerInfo != null">{{playerInfo.name}}  Level: {{playerInfo.summonerLevel}}</p>
+<img *ngIf = "playerInfo != null" src="http://ddragon.leagueoflegends.com/cdn/11.11.1/img/profileicon/{{playerInfo.profileIconId}}.png">
+<button type = "button" (click) = "backClicked()"> Back </button>
+<div *ngIf = "playerMatches != null">
+  <a *ngFor = "let item of range(playerMatches.endIndex-1);index as i;">
+    {{playerMatches.matches[i].role}} in {{playerMatches.matches[i].queue}}
+    <img [src] ="playerMatches.images[i]">
+    <br>
+    </a>
+</div>

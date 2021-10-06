@@ -1,0 +1,7 @@
+<h1>Leaderboard</h1>
+<div>
+  <a *ngFor="let player of ladder"  routerLink="/player/{{player.summonerId}}">
+    {{player.summonerName}} with {{player.leaguePoints}} LP
+    <br>
+    </a>
+</div>

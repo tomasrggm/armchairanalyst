@@ -1,0 +1,28 @@
+a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+
+  background-color: dodgerblue;
+  width: 150px;
+  height: 63px;
+  border: 2px solid dodgerblue;
+  border-radius: 12px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.4s;
+}
+
+a:hover{
+  background-color: orange;
+  border: 2px solid orange;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
